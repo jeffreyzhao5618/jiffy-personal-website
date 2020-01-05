@@ -1,16 +1,27 @@
 /* General */
+body{
+    background-color:gray;
+}
 
-.name-title{
-    padding-top:20px;
-    padding-bottom:20px;
+.title-heading{
+    margin:20px 0px;
     text-align:center;
 }
 
-/* Navigation Bar */
-.nav-custom{
-    margin:auto;
+.section-heading{
+    margin:20px 0px;
+    text-align:center;
 }
 
+.avatar{
+    display:block;
+    width:200px;
+    height: 200px;
+    margin:20px auto;
+    border-radius:50%;
+}
+
+/* Navigation Bar */
 .nav .nav-item{
     font-size:20px;
 }
