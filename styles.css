@@ -3,13 +3,26 @@ body{
     background-color:gray;
 }
 
+.container{
+    margin:auto;
+    background-color:blue;
+    width:80%;
+}
+
 .title-heading{
-    margin:20px 0px;
+    padding:20px;
     text-align:center;
 }
 
-.section-heading{
-    margin:20px 0px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.section{
+    margin: 50px auto;
     text-align:center;
 }
 
@@ -17,13 +30,45 @@ body{
     display:block;
     width:200px;
     height: 200px;
-    margin:20px auto;
     border-radius:50%;
 }
 
 /* Navigation Bar */
-.nav .nav-item{
-    font-size:20px;
+.navbar{
+    width:80%;
+    margin:auto;
+    padding:10px 0px;
+    background-color: gray;
+    
 }
 
+.navbar a{
+    width:25%;
+    float:left;
+    text-decoration:none;
+    text-align: center;
+}
 
+.topnav{
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+    overflow:hidden;
+    background-color:gray;
+}
+
+.topnav li{
+    float: left;
+    width:25%;
+}
+
+.topnav li a{
+    display:block;
+    padding: 14px 0px;
+    text-decoration: none;
+    text-align:center;
+}
+
+li a:hover{
+    background-color: white;
+}
