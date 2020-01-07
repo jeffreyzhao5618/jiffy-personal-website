@@ -26,8 +26,13 @@ body{
 
 
 .section{
-    margin: 50px auto;
+    margin: 100px auto;
     text-align:center;
+    font-size: 2em;
+}
+
+.section h1{
+    margin: 50px;
 }
 
 .avatar{
@@ -37,8 +42,16 @@ body{
     border-radius:50%;
 }
 
-.avatar-contianer{
+.avatar-container{
+    padding: 50px;
+    margin: 50px auto;
+    width: 50%;
+    background-color:lightslategray;
+    text-align: center;
+}
 
+.avatar-container *{
+    margin: 30px auto;
 }
 /* Navigation Bar */
 
