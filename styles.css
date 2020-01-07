@@ -1,17 +1,21 @@
 /* General */
 body{
-    background-color:gray;
+    background-color: #FFFFFF;
+    margin: 0px;
 }
 
 .container{
     margin:auto;
-    background-color:blue;
+    /* background-color:blue; */
     width:80%;
 }
 
 .title-heading{
     padding:20px;
     text-align:center;
+    color: #FFFFFF;
+    background-color: navy;
+    margin: 0px;
 }
 
 .clearfix::after {
@@ -33,42 +37,36 @@ body{
     border-radius:50%;
 }
 
-/* Navigation Bar */
-.navbar{
-    width:80%;
-    margin:auto;
-    padding:10px 0px;
-    background-color: gray;
-    
-}
+.avatar-contianer{
 
-.navbar a{
-    width:25%;
-    float:left;
-    text-decoration:none;
-    text-align: center;
 }
+/* Navigation Bar */
 
 .topnav{
     list-style-type:none;
     margin:0;
     padding: 0;
     overflow:hidden;
-    background-color:gray;
+    background-color:navy;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
 }
 
 .topnav li{
     float: left;
-    width:25%;
 }
 
 .topnav li a{
     display:block;
-    padding: 14px 0px;
+    padding: 14px 15px;
     text-decoration: none;
     text-align:center;
+    color: lightslategray;
+    font-size: 1.5em;
 }
 
 li a:hover{
-    background-color: white;
+    color:white;
 }
