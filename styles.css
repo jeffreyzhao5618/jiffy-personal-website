@@ -2,6 +2,7 @@
 body{
     background-color: #FFFFFF;
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -13,9 +14,10 @@ body{
 .title-heading{
     padding:20px;
     text-align:center;
-    color: #FFFFFF;
+    color: lime;
     background-color: navy;
     margin: 0px;
+    font-size: 2.5em;
 }
 
 .clearfix::after {
@@ -29,6 +31,10 @@ body{
     margin: 100px auto;
     text-align:center;
     font-size: 2em;
+}
+
+.section hr{
+    width:80%;
 }
 
 .section h1{
