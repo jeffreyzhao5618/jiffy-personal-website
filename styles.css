@@ -22,16 +22,19 @@ body{
     padding-top: 15px;
     padding-bottom: 80px;
     text-align:center;
-    font-size: 2em;
+}
+
+.section:first-of-type{
+    padding-top: 80px;
+}
+
+.section-color:nth-of-type(even){
+    background-color:#EEEEEE
 }
 
 .section-container{
     width:80%;
     margin: auto;
-}
-
-.section:nth-of-type(even){
-    background-color:#EEEEEE;
 }
 
 .section hr{
@@ -43,6 +46,14 @@ body{
     font-weight:100;
 }
 
+.section-head{
+    font-size: 3em;
+}
+
+.section .section-container p{
+    font-size: 2em;
+}
+
 .avatar{
     display:block;
     width:200px;
@@ -52,7 +63,7 @@ body{
 
 .avatar-container{
     padding: 50px;
-    margin: 50px auto;
+    margin: auto;
     width: 50%;
     background-color:lightslategray;
     text-align: center;
