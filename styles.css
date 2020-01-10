@@ -3,11 +3,16 @@ body{
     background-color: #FFFFFF;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
 
 .container{
     margin:auto;
-    /* background-color:blue; */
     width:80%;
 }
 
@@ -28,7 +33,7 @@ body{
     padding-top: 80px;
 }
 
-.section-color:nth-of-type(even){
+.section-color{
     background-color:#EEEEEE
 }
 
@@ -72,7 +77,45 @@ body{
 .avatar-container *{
     margin: 30px auto;
 }
-/* Navigation Bar */
+
+.project-cell-container{
+    display: flex;
+    justify-content: center;
+}
+
+.project-cell{
+    width: 33%;
+    padding-top: 33%;
+    border-style: solid;
+    border-width: 1px;
+    margin: 30px 30px;
+}
+
+.project-cell:hover{
+    cursor: pointer;
+}
+
+.project-popup-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: none;
+}
+
+.project-popup{
+    width: 50%;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 140px auto;
+    background-color: white;
+}
+
+/* Header/Navigation */
 
 .title-heading{
     padding:20px;
@@ -94,10 +137,6 @@ body{
     justify-content: center;
     position: sticky;
     top:0;
-}
-
-.topnav li{
-    float: left;
 }
 
 .topnav li a{
