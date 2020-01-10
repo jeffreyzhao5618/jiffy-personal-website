@@ -103,17 +103,20 @@ body{
     right: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 1;
-    /* display: none; */
+    display: none;
+    text-align: center;
 }
 
 .project-popup{
-    width: 50%;
+    width: 80%;
     padding: 10px;
+    max-height: 80%;
     border-style: solid;
     border-width: 1px;
-    margin: 140px auto;
+    margin: 40px auto;
     background-color: white;
     position: relative;
+    overflow: auto;
 }
 
 .close-dot{
@@ -125,10 +128,8 @@ body{
     border-style: solid;
     background-color: crimson;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    margin-right: -8px;
-    margin-top: -8px;
+    top: 10px;
+    right: 10px;
 }
 
 .close-dot:hover{
