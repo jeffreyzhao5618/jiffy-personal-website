@@ -103,7 +103,7 @@ body{
     right: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 1;
-    display: none;
+    /* display: none; */
 }
 
 .project-popup{
@@ -113,8 +113,27 @@ body{
     border-width: 1px;
     margin: 140px auto;
     background-color: white;
+    position: relative;
 }
 
+.close-dot{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    background-color: crimson;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: -8px;
+    margin-top: -8px;
+}
+
+.close-dot:hover{
+    cursor: pointer;
+}
 /* Header/Navigation */
 
 .title-heading{
