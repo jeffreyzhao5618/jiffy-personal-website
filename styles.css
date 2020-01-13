@@ -82,17 +82,27 @@ body{
     margin: 30px auto;
 }
 
-.project-cell-container{
-    display: flex;
-    justify-content: center;
-}
-
 .project-cell{
-    width: 33%;
-    padding-top: 33%;
+    margin: 30px auto;
+    width: 60%;
+    padding-top: 70%;
     border-style: solid;
     border-width: 1px;
-    margin: 30px 30px;
+}
+
+@media only screen and (min-width: 900px) {
+    .project-cell-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-cell{
+        width: 33%;
+        padding-top: 33%;
+        border-style: solid;
+        border-width: 1px;
+        margin: 30px 30px;
+    }
 }
 
 .project-cell:hover{
