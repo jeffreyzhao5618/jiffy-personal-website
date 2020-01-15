@@ -82,15 +82,15 @@ body{
     margin: 30px auto;
 }
 
-.project-cell{
+/* .project-cell{
     margin: 30px auto;
     width: 60%;
     padding-top: 70%;
     border-style: solid;
     border-width: 1px;
-}
+} */
 
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
     .project-cell-container{
         display: flex;
         justify-content: center;
@@ -103,6 +103,22 @@ body{
         border-width: 1px;
         margin: 30px 30px;
     }
+} */
+.project-cell-container{
+    display: block;
+}
+
+@media only screen and (min-width: 900px) {
+    .project-cell-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.project-cell{
+    width: 300px;
+    height: 400px;
+    margin: 30px 30px;
 }
 
 .project-cell:hover{
@@ -130,7 +146,27 @@ body{
     margin: 40px auto;
     background-color: white;
     position: relative;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.project-popup > *:not(.close-dot){
+    margin: 30px 15px;
+}
+
+.project-popup h1{
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.project-popup p{
+    font-size: 1.5em;
+}
+
+#project-1-img{
+    width: 400px;
+    height: 300px;
+    margin: auto;
 }
 
 .close-dot{

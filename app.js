@@ -1,7 +1,10 @@
 body = document.querySelector('body');
-project1_button = document.querySelector('.project-cell-container .project-cell:nth-child(1)');
+project1_button = document.querySelector('.project-cell-container .project-cell:nth-of-type(1)');
 project1_popup = document.getElementById('project1');
 project1_close_butt = document.querySelector('#project1 .project-popup .close-dot');
+project2_button = document.querySelector('.project-cell-container .project-cell:nth-of-type(2)');
+project2_popup = document.getElementById('project2');
+project2_close_butt = document.querySelector('#project2 .project-popup .close-dot');
 nav_buttons = document.querySelectorAll('.topnav li a');
 
 //sections
@@ -13,9 +16,7 @@ projects_pos = projects.offsetTop;
 contact = document.querySelector('#contact');
 contact_pos = contact.offsetTop;
 
-
-console.log(project1_close_butt);
-
+// Project one: Plant Flooding
 project1_button.addEventListener('click', () => {
     project1_popup.style.display = 'block';
     body.classList.add('stop-scrolling');
@@ -23,6 +24,17 @@ project1_button.addEventListener('click', () => {
 
 project1_close_butt.addEventListener('click', () => {
     project1_popup.style.display = 'none';
+    body.classList.remove('stop-scrolling');
+});
+
+//Project two: Speedwagon Project
+project2_button.addEventListener('click', () => {
+    project2_popup.style.display = 'block';
+    body.classList.add('stop-scrolling');
+});
+
+project2_close_butt.addEventListener('click', () => {
+    project2_popup.style.display = 'none';
     body.classList.remove('stop-scrolling');
 });
 
