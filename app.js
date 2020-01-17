@@ -16,6 +16,7 @@ projects_pos = projects.offsetTop;
 contact = document.querySelector('#contact');
 contact_pos = contact.offsetTop;
 
+
 // Project one: Plant Flooding
 project1_button.addEventListener('click', () => {
     project1_popup.style.display = 'block';
@@ -56,11 +57,23 @@ nav_buttons[3].addEventListener('click', () => {
     window.scrollTo(0,contact_pos-50);
 });
 
+//Make current section active
+let yscroll = 0;
+
+window.onscroll = () => {
+    yscroll = window.scrollY;
+};
+
+function checkScroll(){
+    if(yscroll < about_pos){
+
+    }
+
+};
+
 // recalibrate positions of sections on window resize
 window.addEventListener('resize', () => {
     about_pos = about.offsetTop;
     projects_pos = projects.offsetTop;
     contact_pos = contact.offsetTop;
 });
-
-console.log(about_pos);

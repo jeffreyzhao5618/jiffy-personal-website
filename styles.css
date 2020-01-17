@@ -13,7 +13,7 @@ body{
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
-  }
+}
 
 .container{
     margin:auto;
@@ -35,6 +35,7 @@ body{
 
 .section:first-of-type{
     padding-top: 80px;
+    background-image: url('images/wallpaper2.png');
 }
 
 .section-color{
@@ -74,12 +75,13 @@ body{
     padding: 50px;
     margin: auto;
     width: 50%;
-    background-color:lightslategray;
+    background-color: rgba(60,60,60,.8);
     text-align: center;
 }
 
 .avatar-container *{
     margin: 30px auto;
+    color: white;
 }
 
 /* .project-cell{
