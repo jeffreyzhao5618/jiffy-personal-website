@@ -106,6 +106,7 @@ body{
         margin: 30px 30px;
     }
 } */
+
 .project-cell-container{
     display: block;
 }
@@ -215,10 +216,14 @@ body{
     display:block;
     padding: 14px 15px;
     text-decoration: none;
-    text-align:center;
     color: lightslategray;
+    text-align:center;
     font-size: 1.5em;
     letter-spacing: .1em;
+}
+
+.topnav li .active{
+    color: white;
 }
 
 li a:hover{
@@ -228,6 +233,6 @@ li a:hover{
 
 /* Footer */
 .footer{
-    padding:50px 0px;
+    padding:100px 0px;
     background-color:darkslategray;
 }
