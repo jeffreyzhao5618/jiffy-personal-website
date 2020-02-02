@@ -26,7 +26,7 @@ body{
     display: table;
 }
 
-
+/* Body */
 .section{
     padding-top: 15px;
     padding-bottom: 80px;
@@ -64,6 +64,7 @@ body{
     font-size: 2em;
 }
 
+/* Avatar */
 .avatar{
     display:block;
     width:200px;
@@ -84,29 +85,7 @@ body{
     color: white;
 }
 
-/* .project-cell{
-    margin: 30px auto;
-    width: 60%;
-    padding-top: 70%;
-    border-style: solid;
-    border-width: 1px;
-} */
-
-/* @media only screen and (min-width: 900px) {
-    .project-cell-container{
-        display: flex;
-        justify-content: center;
-    }
-
-    .project-cell{
-        width: 33%;
-        padding-top: 33%;
-        border-style: solid;
-        border-width: 1px;
-        margin: 30px 30px;
-    }
-} */
-
+/* Projects */
 .project-cell-container{
     display: block;
 }
@@ -188,8 +167,8 @@ body{
 .close-dot:hover{
     cursor: pointer;
 }
-/* Header/Navigation */
 
+/* Header/Navigation */
 .title-heading{
     padding:20px;
     text-align:center;
@@ -233,6 +212,12 @@ li a:hover{
 
 /* Footer */
 .footer{
-    padding:100px 0px;
+    padding:50px 0px;
     background-color:darkslategray;
+}
+
+.copyright {
+    color: lightslategray;
+    text-align: center;
+    font-size: 1.1em;
 }
