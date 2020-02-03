@@ -8,6 +8,7 @@ project2_popup = document.getElementById('project2'); // Project 2 popup
 project2_close_butt = document.querySelector('#project2 .project-popup .close-dot'); // Close button for project 2
 //[0]=Home [1]=About [2]=Projects [3]=Contact
 nav_buttons = document.querySelectorAll('.topnav li a'); // Navbar buttons
+console.log(nav_buttons);
 
 // Section selectors
 home = document.querySelector('#home');
@@ -95,4 +96,21 @@ window.addEventListener('resize', () => {
     projects_pos = projects.offsetTop;
     contact_pos = contact.offsetTop;
     checkScroll();
+    replaceNavLinks();
 });
+
+// Replace nav-links with sysbols if screen is small
+let navButtonSymbols = ["home", "address-card","wrench","phone"]; // list of symbol names
+let navButtonNames = ["Home", "About", "Projects", "Contact"];
+function replaceNavLinks(){
+    if(window.innerWidth < 600){
+        for(let i = 0; i < nav_buttons.length; i++) {
+            nav_buttons[i].innerHTML = '<i class="fas fa-' + navButtonSymbols[i] + '"></i>';
+        }
+    } else {
+        for(let i = 0; i < nav_buttons.length; i++) {
+            nav_buttons[i].innerHTML = navButtonNames[i];
+        }
+    }
+}
+replaceNavLinks(); // Call once to replace on small devices
