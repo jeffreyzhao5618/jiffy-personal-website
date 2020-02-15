@@ -86,7 +86,7 @@ body{
 .avatar-container{
     padding: 10px;
     margin:auto;
-    width: 80%;
+    width: 90%;
     background-color: rgba(60,60,60,.8);
     text-align: center;
 }
@@ -200,7 +200,7 @@ body{
 }
 
 .project-image {
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
 }
 @media only screen and (min-width: 400px) {
@@ -264,6 +264,12 @@ li a:hover{
 }
 
 .copyright {
+    font-size: .7em;
     color: lightslategray;
     text-align: center;
+}
+@media only screen and (min-width: 400px) {
+    .copoyright{
+        font-size: 1em;
+    }
 }
