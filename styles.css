@@ -67,7 +67,12 @@ body{
 }
 
 .section .section-container p{
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+@media only screen and (min-width: 400px) {
+    .section .section-container p{
+        font-size: 1.5em;
+    }
 }
 
 /* Avatar */
@@ -79,11 +84,19 @@ body{
 }
 
 .avatar-container{
-    padding: 50px;
-    margin: auto;
-    width: 50%;
+    padding: 10px;
+    margin:auto;
+    width: 80%;
     background-color: rgba(60,60,60,.8);
     text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .avatar-container{
+        padding: 50px;
+        width: 50%;
+    }
+    
 }
 
 .avatar-container *{
@@ -104,9 +117,17 @@ body{
 }
 
 .project-cell{
-    width: 300px;
-    height: 400px;
-    margin: 30px 30px;
+    width: 240px;
+    height: 320px;
+    margin: 20px 20px;
+}
+
+@media only screen and (min-width: 400px) {
+    .project-cell{
+        width: 300px;
+        height: 400px;
+        margin: 30px 30px;
+    }
 }
 
 .project-cell:hover{
@@ -131,7 +152,7 @@ body{
     max-height: 80%;
     border-style: solid;
     border-width: 1px;
-    margin: 40px auto;
+    margin: 30px auto;
     background-color: white;
     position: relative;
     overflow-y: auto;
@@ -143,12 +164,22 @@ body{
 }
 
 .project-popup h1{
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 100;
+}
+@media only screen and (min-width: 400px) {
+    .project-popup h1{
+        font-size: 2.5em;
+    }
 }
 
 .project-popup p{
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+@media only screen and (min-width: 400px) {
+    .project-popup p{
+        font-size: 1.5em;
+    }
 }
 
 .close-dot{
@@ -169,15 +200,18 @@ body{
 }
 
 .project-image {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
+}
+@media only screen and (min-width: 400px) {
+    .project-image{
+        max-width: 250px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
     .project-image{
         max-width: 400px;
-        height: auto;
-        margin: auto;
     }
 }
 
@@ -232,5 +266,4 @@ li a:hover{
 .copyright {
     color: lightslategray;
     text-align: center;
-    font-size: 1.1em;
 }
